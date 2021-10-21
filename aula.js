@@ -961,7 +961,7 @@ var myMusci = [
         "gold" : true
     },
     {
-        "Artist" : "Beay=u Carnes",
+        "Artist" : "Beau Carnes",
         "Title" : "Cereal Man",
         "release_year": 2003,
         "formats" : [
@@ -974,9 +974,47 @@ var myMusci = [
 
 ];
 
-/* */
-/* */
-/* */
+/*Accessing Nested Objects */
+var myStorage = {
+    "car": {
+        "inside": {
+            "glove box": "maps",
+            "passenger seat": "crumps"
+        },
+        "outside": {
+            "trunk":"jack"
+        }
+    }
+}
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents)
+
+/* Accessing nested array*/
+var myPlants = [
+    {
+       type : "flowers",
+        list : [
+            "rose",
+            "tulip",
+            "dandelion"
+        ],
+    },
+    {
+        type : "trees",
+        list : [
+            "fir",
+            "pine",
+            "birch"
+        ],
+    },
+];
+
+var secondTree = myPlants[1].list[1];
+console.log(secondTree)
+
+/*Record Collection */
+
 /* */
 /* */
 /* */
